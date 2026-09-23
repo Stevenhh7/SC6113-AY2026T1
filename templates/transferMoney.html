@@ -123,6 +123,8 @@
             const contract = new web3.eth.Contract(contractABI,contractAddress);
 
             async function transfer() {
+              const accounts = await web3.eth.requestAccount()
+              console.log("accounts[0]" + accounts[0])
 
                 
             }
